@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+void bell(){
+	printf("door bell ringing ");
+}
+
+int main(){
+	bell();
+	return 0 ;
+}
