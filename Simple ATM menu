@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main ()
+{
+	int choice,amount=1234500,wd,d;
+	
+	do{
+		printf("choose a option:\n 1.check balance\n 2. deposit\n 3.withdraw\n 4.exit\n");
+		scanf("%d",&choice);
+		printf("\n");
+		switch(choice)
+			{
+			
+			case 1: printf("your balance:%d\n",amount);
+			break;
+			
+			case 2: printf("put your money in the slot please\n");
+			scanf("%d",&d);
+			printf("your new balance:%d+%d\n",amount+d);
+			break;
+				
+			case 3: printf("enter the amount you want to withdraw\n");
+			scanf("%d",&wd);
+			printf("balance remaining:%d-%d\n",amount-wd);
+			break;
+			
+			case 4: printf("exiting--\n");
+			break;
+			
+			default:
+				printf("wrong choice\n");
+			}
+		}
+		while (choice!=4);
+		
+		return 0 ;
+}
