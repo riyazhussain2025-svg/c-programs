@@ -1,0 +1,11 @@
+// argument no return value function 
+#include<stdio.h>
+
+void marks(int mark){
+	printf("marks is %d ",mark);
+}
+
+int main(){
+	marks(88);
+	return 0 ;
+}
