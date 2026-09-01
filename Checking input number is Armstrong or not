@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main ()
+{
+	int n,sum = 0,digit, t;
+	printf("enter a number ");
+	scanf("%d",&n);
+	t=n;
+	while(n!=0)
+	{
+		digit = n%10;
+		sum = sum+digit*digit*digit;
+		n = n/10;
+	}
+	if(t==sum)
+	{
+		printf("it is armstrong");
+	}
+	else
+	{
+		printf("not armstrong");
+	}
+	return 0 ;
+}
