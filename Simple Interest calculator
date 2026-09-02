@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main ()
+{
+	float principal_amount, rate , years, si; 
+	
+	printf("enter principal amount:");
+	scanf("%f",&principal_amount);
+	
+	printf("enter rate:");
+	scanf("%2f",&rate);
+	
+	printf("enter years:");
+	scanf("%f",&years);
+	
+	si = principal_amount*rate*years/100;
+	printf("simple intereset is : %.2f",si);
+	
+return 0 ;
+}
