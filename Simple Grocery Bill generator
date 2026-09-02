@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main ()
+{
+int fst_ip,snd_ip,trd_ip, fst_iq,snd_iq,trd_iq , total_bill;
+	
+	printf("enter price and quantity of 1st item:");
+	scanf("price is %d and quantity is %d",fst_ip,fst_iq);
+
+		printf("enter price and quantity of 2nd item:");
+	scanf("price is %d and quantity is %d",snd_ip,snd_iq);
+	
+		printf("enter price and quantity of 3rd item:");
+	scanf("price is %d and quantity is %d",trd_ip,trd_iq);
+	
+	total_bill = fst_ip*fst_iq+snd_ip*snd_iq+trd_ip*trd_iq;
+	printf("total bill is %d",total_bill);
+	
+	return 0 ;
+	
+	
+}
